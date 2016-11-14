@@ -1,118 +1,163 @@
 <!DOCTYPE html>
 <html>
-<title>行きましょう！</title>
+<title>Rabbit Hole Tutors</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-teal.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"><style>
-.w3-sidenav a {padding:16px;font-weight:bold}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
-<body>
+<body class="w3-light-grey">
 
-<nav class="w3-sidenav w3-collapse w3-white w3-animate-left w3-card-2" style="z-index:3;width:250px;" id="mySidenav">
-  <a href="#" class="w3-border-bottom w3-large"><img src="http://www.w3schools.com/images/w3schools.png" style="width:80%;"></a>
-  <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-text-teal w3-hide-large w3-closenav w3-large">Close <i class="fa fa-remove"></i></a>
-  <a href="#" class="w3-light-grey w3-medium">Home</a>
-  <div class="w3-accordion">
-    <a onclick="myAccordion('demo')" href="javascript:void(0)">Writing Systems <i class="fa fa-caret-down"></i></a>
-    <div id="demo" class="w3-accordion-content w3-animate-left w3-padding">
-      <a href="#">Hiragana</a>
-      <a href="#">Katakana</a>
-      <a href="#">Kanji</a>
-    </div>
-  </div>
-  <a href="#">Pronunciation</a>
-  <a href="#">Vocabulary</a>
-  <a href="#">Grammar</a>
-  <a href="#">Culture</a>
-  <a href="#">Resources</a>
-</nav>
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
 
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
-
-<div class="w3-main" style="margin-left:250px;">
-
-<div id="myTop" class="w3-top w3-container w3-padding-16 w3-theme w3-large">
-  <i class="fa fa-bars w3-opennav w3-hide-large w3-xlarge w3-margin-left w3-margin-right" onclick="w3_open()"></i>
-  <span id="myIntro" class="w3-hide">W3.CSS: Introduction</span>
-</div>
-
-<header class="w3-container w3-theme w3-padding-64" style="padding-left:32px">
-  <h1 class="w3-xxxlarge w3-padding-16">行きましょう！</h1>
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32">
+  <h1><b>RABBIT HOLE TUTORS</b></h1>
+  <p><span class="w3-tag">Welcome to the Wonderful World of Math!</span></p>
 </header>
 
-<div class="w3-container w3-padding-32" style="padding-left:32px">
+<!-- Grid -->
+<div class="w3-row">
 
-<h2>Why learn Japanese?</h2>
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
+    <div class="w3-container w3-padding-8">
+      <h3><b>Introduction to Calculus I</b></h3>
+      <h5>CALCULUS I <span class="w3-opacity">April 7, 2014</span></h5>
+    </div>
 
-<p>W3.CSS is a modern CSS framework with built-in responsiveness:</p>
+    <div class="w3-container">
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-btn w3-padding-large w3-white w3-border w3-hover-border-black"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
 
-<ul class="w3-leftbar w3-theme-border" style="list-style:none">
- <li>Smaller and faster than other CSS frameworks.</li>
- <li>Easier to learn, and easier to use than other CSS frameworks.</li>
- <li>Uses standard CSS only (No jQuery or JavaScript library).</li>
- <li>Speeds up mobile HTML apps.</li>
- <li>Provides CSS equality for all devices. PC, laptop, tablet, and mobile:</li>
-</ul>
-<br>
-<img src="img_responsive.png" style="width:100%;margin:20px 0" alt="Responsive">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container w3-padding-8">
+      <h3><b>BLOG ENTRY</b></h3>
+      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+    </div>
 
-<hr>
-<h2>W3.CSS is Free</h2>
-<p>W3.CSS is free to use. No license is necessary.</p>
-
-<hr>
-<h2>Easy to Use</h2>
-<div class="w3-container w3-sand w3-leftbar">
-<p><i>Make it as simple as possible, but not simpler.</i><br>
-Albert Einstein</p>
+    <div class="w3-container">
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-btn w3-padding-large w3-white w3-border w3-hover-border-black"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
 </div>
 
-<footer class="w3-container w3-theme w3-padding-32" style="padding-left:32px">
-  <h5>Footer</h5>
-  <p>Footer information goes here</p>
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card-2 w3-margin w3-margin-top">
+  <img src="/w3images/avatar_g.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Jasmine Nguyen</b></h4>
+      <p>Hello! I am currently a freshman at SUNY University at Buffalo studying Computer Science, Mathematics, and Linguistics. </p>
+    </div>
+  </div><hr>
+
+  <!-- Posts -->
+  <div class="w3-card-2 w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Let's Get Started!</h4>
+    </div>
+
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Calculus I</span><br>
+        <span>Sed mattis nunc</span>
+      </li>
+
+      <li class="w3-padding-16">
+        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Calculus II</span><br>
+        <span>Praes tinci sed</span>
+      </li>
+
+      <li class="w3-padding-16">
+        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Alegbra</span><br>
+        <span>Ultricies congue</span>
+      </li>
+
+      <li class="w3-padding-16">
+        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Alegbra II</span><br>
+        <span>Ultricies congue</span>
+      </li>
+
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Trigonometry</span><br>
+        <span>Lorem ipsum dipsum</span>
+      </li>
+
+    </ul>
+  </div>
+  <hr>
+
+  <!-- Labels / tags -->
+  <div class="w3-card-2 w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+
+    <p>
+<span class="w3-tag w3-black w3-margin-bottom">Alegra</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Geometry</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Alegra II</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Trigonometry</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Pre-Calculus</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Calculus I</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Calculus II</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Calculus III</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Differential Equations</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Linear Alegra</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Resources</span>
+    </p>
+    </div>
+  </div>
+
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-btn w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-btn w3-padding-large w3-margin-bottom">Next »</button>
 </footer>
-
-</div>
-
-<script>
-// Open and close the sidenav on medium and small screens
-function w3_open() {
-    document.getElementById("mySidenav").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidenav").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-
-// Change style of top container on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("myTop").classList.add("w3-card-4");
-        document.getElementById("myIntro").classList.add("w3-show-inline-block");
-    } else {
-        document.getElementById("myIntro").classList.remove("w3-show-inline-block");
-        document.getElementById("myTop").classList.remove("w3-card-4");
-    }
-}
-
-// Accordions
-function myAccordion(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className += " w3-theme";
-    } else {
-        x.className = x.className.replace("w3-show", "");
-        x.previousElementSibling.className =
-        x.previousElementSibling.className.replace(" w3-theme", "");
-    }
-}
-</script>
 
 </body>
 </html>
