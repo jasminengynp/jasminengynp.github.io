@@ -1,163 +1,170 @@
 <!DOCTYPE html>
+
 <html>
-<title>Rabbit Hole Math</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>3 Column Layout</title>
+<style type="text/css">
+
+ /* Layout */
+ body {
+  min-width: 630px;
+ }
+
+ #container {
+  padding-left: 200px;
+  padding-right: 190px;
+ }
+
+ #container .column {
+  position: relative;
+  float: left;
+ }
+
+ #center {
+  padding: 10px 20px;
+  width: 100%;
+ }
+
+ #left {
+  width: 180px;
+  padding: 0 10px;
+  right: 240px;
+  margin-left: -100%;
+ }
+
+ #right {
+  width: 130px;
+  padding: 0 10px;
+  margin-right: -100%;
+ }
+
+ #footer {
+  clear: both;
+ }
+
+ /* IE hack */
+ * html #left {
+  left: 150px;
+ }
+
+ /* Make the columns the same height as each other */
+ #container {
+  overflow: hidden;
+ }
+
+ #container .column {
+  padding-bottom: 1001em;
+  margin-bottom: -1000em;
+ }
+
+ /* Fix for the footer */
+ * html body {
+  overflow: hidden;
+ }
+
+ * html #footer-wrapper {
+  float: left;
+  position: relative;
+  width: 100%;
+  padding-bottom: 10010px;
+  margin-bottom: -10000px;
+  background: #fff;
+ }
+
+ /* Aesthetics */
+ body {
+  margin: 0;
+  padding: 0;
+  font-family:Sans-serif;
+  line-height: 1.5em;
+ }
+
+ p {
+  color: #555;
+ }
+
+ nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ }
+
+ nav ul a {
+  color: darkgreen;
+  text-decoration: none;
+ }
+
+ #header, #footer {
+  font-size: large;
+  padding: 0.3em;
+  background: #BCCE98;
+ }
+
+ #left {
+  background: #DAE9BC;
+ }
+
+ #right {
+  background: #F7FDEB;
+ }
+
+ #center {
+  background: #fff;
+ }
+
+ #container .column {
+  padding-top: 1em;
+ }
+
 </style>
-<body class="w3-blue-gray">
+ /* ************************************************************************************** */
 
-<!-- w3-content defines a container for fixed size centered content,
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
+</head>
 
-<!-- Header -->
-<header class="w3-container w3-center w3-padding-32">
-  <h1><b>RABBIT HOLE MATHEMATICS</b></h1>
-  <p><span class="w3-tag">Welcome to the Wonderful World of Math!</span></p>
-</header>
+<body>
 
-<!-- Grid -->
-<div class="w3-row">
+<header id="header"><h1>Rabbit Hole Mathematics</h1></header>
 
-<!-- Blog entries -->
-<div class="w3-col l8 s12">
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
-    <div class="w3-container w3-padding-8">
-      <h3><b>Introduction to Calculus I</b></h3>
-      <h5>CALCULUS I <span class="w3-opacity">April 7, 2014</span></h5>
-    </div>
+<div id="container">
 
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-btn w3-padding-large w3-white w3-border w3-hover-border-black"><b>READ MORE »</b></button></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr>
+ <main id="center" class="column">
+  <article>
 
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
-    <div class="w3-container w3-padding-8">
-      <h3><b>BLOG ENTRY</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
-    </div>
+   <h1>Why Learn Math?</h1>
+   <p>I know what you're thinking-- that you'll never use math again once you're done with school. But that's simply not the case!</p>
 
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-btn w3-padding-large w3-white w3-border w3-hover-border-black"><b>READ MORE »</b></button></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- END BLOG ENTRIES -->
+  </article>
+ </main>
+
+ <nav id="left" class="column">
+  <h3>SUBJECTS</h3>
+  <ul>
+   <li><a href="#">Algebra</a></li>
+   <li><a href="#">Geometry</a></li>
+   <li><a href="#">Algebra II</a></li>
+   <li><a href="#">Trigonometry</a></li>
+   <li><a href="#">Calculus I</a></li>
+   <li><a href="#">Calculus II</a></li>
+   <li><a href="#">Calculus III</a></li>
+   <li><a href="#">Differential Equations</a></li>
+   <li><a href="#">Linear Algebra</a></li>
+  </ul>
+
+
+ </nav>
+
+ <div id="right" class="column">
+  <h3>ABOUT ME:</h3>
+  <p>My name is Jasmine Nguyen and I am currently a freshman at SUNY University at Buffalo pursuing an education in Computer Science, Mathematics, and Linguistics.</p>
+ </div>
+
 </div>
 
-<!-- Introduction menu -->
-<div class="w3-col l4">
-  <!-- About Card -->
-  <div class="w3-card-2 w3-margin w3-margin-top">
-  <img src="/w3images/avatar_g.jpg" style="width:100%">
-    <div class="w3-container w3-white">
-      <h4><b>Jasmine Nguyen</b></h4>
-      <p>Hello! I am currently a freshman at SUNY University at Buffalo studying Computer Science, Mathematics, and Linguistics. </p>
-    </div>
-  </div><hr>
-
-  <!-- Posts -->
-  <div class="w3-card-2 w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Let's Get Started!</h4>
-    </div>
-
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Calculus I</span><br>
-        <span>Sed mattis nunc</span>
-      </li>
-
-      <li class="w3-padding-16">
-        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Calculus II</span><br>
-        <span>Praes tinci sed</span>
-      </li>
-
-      <li class="w3-padding-16">
-        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Alegbra</span><br>
-        <span>Ultricies congue</span>
-      </li>
-
-      <li class="w3-padding-16">
-        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Alegbra II</span><br>
-        <span>Ultricies congue</span>
-      </li>
-
-      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Trigonometry</span><br>
-        <span>Lorem ipsum dipsum</span>
-      </li>
-
-    </ul>
-  </div>
-  <hr>
-
-  <!-- Labels / tags -->
-  <div class="w3-card-2 w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Topics</h4>
-    </div>
-    <div class="w3-container w3-white">
-
-    <p>
-<span class="w3-tag w3-black w3-margin-bottom">Alegra</span>
-<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Geometry</span>
-<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Alegra II</span>
-<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Trigonometry</span>
-<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Pre-Calculus</span>
-<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Calculus I</span>
-<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Calculus II</span>
-<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Calculus III</span>
-<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Differential Equations</span>
-<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Linear Alegra</span>
-<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Resources</span>
-    </p>
-    </div>
-  </div>
-
-<!-- END Introduction Menu -->
+<div id="footer-wrapper">
+ <footer id="footer"><p>Jasmine Nguyen 2016</p></footer>
 </div>
-
-<!-- END GRID -->
-</div><br>
-
-<!-- END w3-content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-white w3-padding-32 w3-margin-top">
-  <button class="w3-btn w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-  <button class="w3-btn w3-padding-large w3-margin-bottom">Next »</button>
-</footer>
 
 </body>
+
 </html>
