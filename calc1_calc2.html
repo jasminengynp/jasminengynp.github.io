@@ -1,174 +1,164 @@
-<html>
-<head>
-    <title>Calculus I</title></head>
-
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Rabbit Hole Math</title>
-<style type="text/css">
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bunny Mathematics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
+  }
 
- /* Layout */
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {text-align: center;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
 
- table {
-     border-collapse: collapse;
-     width: 100%;
- }
+  .nav-tabs li a {
+      color: #777;
+  }
 
- th, td {
-     padding: 8px;
-     text-align: center;
-     border-bottom: 1px solid #ddd;
- }
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color:  #00e673;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 1;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: white !important;
+  }
+  .navbar-nav li a:hover {
+      color: white;
+      background-color: black !important;
+  }
+  .navbar-nav li.active a {
+      color: white !important;
+      background-color: #555 !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: #00e673 !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  </style>
 
- h3 {
-   text-align: center;
-   text-decoration: underline;
- }
-
- body {
-  min-width: 630px;
- }
-
- #container {
-  padding-left: 200px;
-  padding-right: 190px;
- }
-
- #container .column {
-  position: relative;
-  float: left;
- }
-
- #center {
-  padding: 10px 20px;
-  width: 100%;
- }
-
- #left {
-  width: 180px;
-  padding: 0 10px;
-  right: 240px;
-  margin-left: -100%;
- }
-
- #right {
-  width: 130px;
-  padding: 0 10px;
-  margin-right: -100%;
- }
-
- #footer {
-  clear: both;
- }
-
- /* IE hack */
- * html #left {
-  left: 150px;
- }
-
- /* Make the columns the same height as each other */
- #container {
-  overflow: hidden;
- }
-
- #container .column {
-  padding-bottom: 1001em;
-  margin-bottom: -1000em;
- }
-
- /* Fix for the footer */
- * html body {
-  overflow: hidden;
- }
-
- * html #footer-wrapper {
-  float: left;
-  position: relative;
-  width: 100%;
-  padding-bottom: 10010px;
-  margin-bottom: -10000px;
-  background: #fff;
- }
-
- /* Aesthetics */
- body {
-  margin: 0;
-  padding: 0;
-  font-family:Sans-serif;
-  line-height: 1.5em;
- }
-
- p {
-  color: #555;
- }
-
- nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
- }
-
- nav ul a {
-  color: darkgreen;
-  text-decoration: none;
- }
-
- #header, #footer {
-  font-size: large;
-  padding: 0.3em;
-  background: #BCCE98;
- }
-
- #left {
-  background: #DAE9BC;
- }
-
- #right {
-  background: #F7FDEB;
- }
-
- #center {
-  background: #fff;
- }
-
- #container .column {
-  padding-top: 1em;
- }
-
-a:link, a:visited {
-    background-color: white;
-    color: black;
-    border: 2px solid green;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-
-a:hover, a:active {
-    background-color: green;
-    color: white;
-}
-
-</style>
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">Bunny Math</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://jasminengynp.github.io/">HOME</a></li>
+        <li><a href="alg.html">ALGEBRA</a></li>
+        <li><a href="geo.html">GEOMETRY</a></li>
+        <li><a href="alg2_trig.html">ALGEBRA II / TRIGONOMETRY</a></li>
+        <li><a href="calc1_calc2.html">CALCULUS I / CALCULUS II</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
 
-</body>
-</html>
-<header id="header"><h1>Bunny Mathematics</h1></header>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">COMING SOON!
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>CALCULUS III</a></li>
+            <li>DIFFERENTIAL EQUATIONS</a></li>
+            <li>LINEAR ALGEBRA</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<div id="container">
 
- <main id="center" class="column">
-  <article>
+<!-- Container (TOUR Section) -->
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center"><br></br><br></br>CALCULUS I / CALCULUS II </h3>
+    <P>SUMMARY OF CALC I AND CALC II HERE?</P>
 
-   <h1>Calculus I:</h1>
-   <p><table>
+
+    </div>
+  </div>
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+<table class = "table">
+<h3>STEWART'S SINGLE VARIABLE CALCULUS EARLY TRANSCENDENTALS</h3>
+<p><tbody>
    <tr>
      <th>Chapter 1</th>
      <td><a href="c1chp1.pdf">Functions and Models</a></td>
@@ -200,46 +190,109 @@ a:hover, a:active {
 
    </tr>
    <tr>
-     <th>SOLUTIONS</th>
-     <td><a href="http://www.slader.com/textbook/9781305270336-stewart-single-variable-calculus-early-transcendentals-8th-edition/" target="_blank"><img src="c1book.jpg"></a></td>
+     <th>Chapter 7</th>
+     <td><a href="c1chp7.pdf">Applicataions of Integration</a></td>
 
    </tr>
- </table></p>
+   <tr>
+     <th>Chapter 8</th>
+     <td><a href="c1chp8.pdf">Further Applicataions of Integration</a></td>
 
-  </article>
- </main>
+   </tr>
+   <tr>
+     <th>Chapter 9</th>
+     <td><a href="c1chp9.pdf">Differential Equations</a></td>
 
-<nav id="left" class="column">
-  <a href="https://jasminengynp.github.io/">HOME</a>
-  <p></p>
-  <p></p>
- <h3>SUBJECTS:</h3>
- <ul>
-  <li><a href="alg.html">Algebra</a></li>
-<p></p>
-  <li><a href="geo.html">Geometry</a></li>
-<p></p>
-  <li><a href="alg2.html">Algebra II</a></li>
-<p></p>
-  <li><a href="trig.html">Trigonometry</a></li>
-<p></p>
-  <li><strong>Calculus I</strong></li>
-<p></p>
-  <li><a href="calc2.html">Calculus II</a></li>
-<p></p>
-  <li><a href="calc3.html">Calculus III</a></li>
-<p></p>
-  <li><a href="difeq.html">Differential Equations</a></li>
-<p></p>
-  <li><a href="linalg.html">Linear Algebra</a></li>
-  <p></p>
-  <p></p>
-    <li><a href="about.html">About Me</a></li>
- </ul>
-</nav>
-</div>
- <div id="footer-wrapper">
-  <footer id="footer"><p>Jasmine Nguyen 2016</p></footer>
- </div>
+   </tr>
+   <tr>
+     <th>Chapter 10</th>
+     <td><a href="c1chp10.pdf">Parametric Equations and Polar Coordinates</a></td>
 
-</html
+   </tr>
+   <tr>
+     <th>Chapter 11</th>
+     <td><a href="c1chp11.pdf">Infinite Sequences and Series</a></td>
+
+   </tr>
+   <tr>
+     <th>Chapter 12</th>
+     <td><a href="c1chp12.pdf">Vectors and the Geometry of Space</a></td>
+
+   </tr>
+   <tr>
+     <th>Chapter 13</th>
+     <td><a href="c1chp13.pdf">Vector Functions</a></td>
+
+   </tr>
+   <tr>
+     <th>Chapter 14</th>
+     <td><a href="c1chp14.pdf">Partial Derivatives</a></td>
+
+   </tr>
+   <tr>
+     <th>Chapter 15</th>
+     <td><a href="c1chp15.pdf">Multiple Integrals</a></td>
+
+   </tr>
+   <tr>
+     <th>Chapter 16</th>
+     <td><a href="c1chp16.pdf">Vector Calculus</a></td>
+
+   </tr>
+   <tr>
+     <th>Chapter 17</th>
+     <td><a href="c1chp17.pdf">Second-Order Differential Equations</a></td>
+
+   </tr>
+   <tr>
+     <th>SOLUTIONS</th>
+     <td><a href="http://www.slader.com/textbook/9781305270336-stewart-single-variable-calculus-early-transcendentals-8th-edition/" target="_blank">Stewart's Single Variable Calculus Early Transcendentals</a></td>
+   </tr>
+ </tbody></p>
+  <br>
+  </table>
+  </div>
+
+
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>FOOTER GOES HERE</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
